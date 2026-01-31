@@ -53,21 +53,62 @@
             <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="5 9 2 12 5 15"></polyline><polyline points="9 5 12 2 15 5"></polyline><polyline points="15 19 12 22 9 19"></polyline><polyline points="19 9 22 12 19 15"></polyline><line x1="2" y1="12" x2="22" y2="12"></line><line x1="12" y1="2" x2="12" y2="22"></line></svg>
         );
 
-        // --- DATA ---
+        // --- DATA (ĐÃ CẬP NHẬT ẢNH MỚI) ---
         const QUESTION_DATA = {
           2: [
-            { id: 'k2_1', part1: "Chung C", missing: "a", part2: "ke", imageHint: "Bánh Chưng", imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Banh_chung.jpg/640px-Banh_chung.jpg", options: ["o", "a", "e", "u"] },
-            { id: 'k2_2', part1: "N", missing: "e", part2: "w year", imageHint: "Năm mới", imageUrl: "https://images.unsplash.com/photo-1546552356-3fae876a61ca?q=80&w=600&auto=format&fit=crop", options: ["a", "e", "i", "o"] },
+            { 
+              id: 'k2_1', part1: "Chung C", missing: "a", part2: "ke", 
+              imageHint: "Bánh Chưng", 
+              imageUrl: "https://vietmartjp.com/wp-content/uploads/2022/12/banh-chung-vietmart-sieu-thi-do-viet-tai-nhat.jpg", 
+              options: ["o", "a", "e", "u"] 
+            },
+            { 
+              id: 'k2_2', part1: "N", missing: "e", part2: "w year", 
+              imageHint: "Năm mới", 
+              imageUrl: "https://cdn2.fptshop.com.vn/unsafe/800x0/lunar_new_year_la_gi_1_2c62c08926.png", 
+              options: ["a", "e", "i", "o"] 
+            },
           ],
           3: [
-            { id: 'k3_1', part1: "Lucky M", missing: "o", part2: "ney", imageHint: "Tiền lì xì", imageUrl: "https://images.unsplash.com/photo-1613060616262-b13c77d5440a?q=80&w=600&auto=format&fit=crop", options: ["a", "o", "u", "e"] },
-            { id: 'k3_2', part1: "Pea", missing: "c", part2: "h blossom", imageHint: "Hoa đào", imageUrl: "https://images.unsplash.com/photo-1549887552-93f8efb4133f?q=80&w=600&auto=format&fit=crop", options: ["s", "k", "c", "t"] },
+            { 
+              id: 'k3_1', part1: "Lucky M", missing: "o", part2: "ney", 
+              imageHint: "Tiền lì xì", 
+              imageUrl: "https://vpt-en.b-cdn.net/wp-content/uploads/l/16/li_xi_tet_4_63495d69d0.jpg.webp", 
+              options: ["a", "o", "u", "e"] 
+            },
+            { 
+              id: 'k3_2', part1: "Pea", missing: "c", part2: "h blossom", 
+              imageHint: "Hoa đào", 
+              imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Peach_blossom_2013.jpg/1280px-Peach_blossom_2013.jpg", 
+              options: ["s", "k", "c", "t"] 
+            },
           ],
           4: [
-            { id: 'k4_1', part1: "Firew", missing: "o", part2: "rks", imageHint: "Pháo hoa", imageUrl: "https://images.unsplash.com/photo-1498931299472-f7a63a029763?q=80&w=600&auto=format&fit=crop", options: ["a", "o", "u", "e"] },
-            { id: 'k4_2', part1: "Red Enve", missing: "l", part2: "ope", imageHint: "Bao lì xì", imageUrl: "https://images.unsplash.com/photo-1580228062820-222a08892147?q=80&w=600&auto=format&fit=crop", options: ["l", "n", "m", "h"] },
-            { id: 'k4_3', part1: "Celeb", missing: "r", part2: "ate", imageHint: "Ăn mừng", imageUrl: "https://images.unsplash.com/photo-1514525253440-b393452e8d26?q=80&w=600&auto=format&fit=crop", options: ["l", "r", "n", "t"] },
-            { id: 'k4_4', part1: "Re", missing: "u", part2: "nion", imageHint: "Đoàn tụ", imageUrl: "https://images.unsplash.com/photo-1545622945-813c02cb068d?q=80&w=600&auto=format&fit=crop", options: ["a", "o", "u", "e"] },
+            { 
+              id: 'k4_1', part1: "Firew", missing: "o", part2: "rks", 
+              imageHint: "Pháo hoa", 
+              imageUrl: "https://media.thuonghieucongluan.vn/uploads/2025/04/22/h2-1745310274.jpg", 
+              options: ["a", "o", "u", "e"] 
+            },
+            { 
+              id: 'k4_2', part1: "Red Enve", missing: "l", part2: "ope", 
+              imageHint: "Bao lì xì", 
+              // Dùng lại ảnh Lì xì cho Bao lì xì
+              imageUrl: "https://images.unsplash.com/photo-1580228062820-222a08892147?q=80&w=600&auto=format&fit=crop", 
+              options: ["l", "n", "m", "h"] 
+            },
+            { 
+              id: 'k4_3', part1: "Celeb", missing: "r", part2: "ate", 
+              imageHint: "Ăn mừng", 
+              imageUrl: "https://www.makatimed.net.ph/wp-content/uploads/2021/01/1000-55.png", 
+              options: ["l", "r", "n", "t"] 
+            },
+            { 
+              id: 'k4_4', part1: "Re", missing: "u", part2: "nion", 
+              imageHint: "Đoàn tụ", 
+              imageUrl: "https://voca-land.sgp1.cdn.digitaloceanspaces.com/0/1757667552159/98d23b1f.jpg", 
+              options: ["a", "o", "u", "e"] 
+            },
           ]
         };
 
@@ -198,7 +239,6 @@
                                         `}
                                     >
                                         {filledChar ? (
-                                            /* ĐÃ SỬA: Bỏ class 'uppercase' ở dòng này */
                                             <span className={`text-6xl md:text-7xl font-black pop-in ${gameState === 'correct' ? 'text-green-600' : 'text-gray-800'} ${gameState === 'wrong' ? 'text-red-500' : ''}`}>{filledChar}</span>
                                         ) : (
                                             <span className="text-gray-300 pointer-events-none opacity-50"><MoveIcon size={32} /></span>
